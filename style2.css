@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.header {
+    background-color: #0a0717;
+    position: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    z-index: 1000; 
+    margin-top: 0;
+}
+
+.header .nav-links {
+    list-style: none; 
+}
+  
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+  
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+  
+.header .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+  
+.header .nav-links li a:hover {
+    color: pink;
+}
+  
+.header .btn button{
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+  
+.header .btn button:hover {
+    background-color: #eceff1;
+    color: pink;
+    transform: scale(1.1);
+}
+
+.dividendo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BB9CC0;
+    margin: 10px;
+    border: solid 2px #67729D;
+    border-radius:3%;
+}
+
+.info{
+    padding-left: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 50px;
+    font-family: 'Ephesis', cursive;
+    border-bottom: solid 2px black;
+}
+
+.texto{
+    max-width: 500px;
+    text-align: justify;
+}
+
+.imginfo{
+    padding: 10px;
+    padding-right: 100px ;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.pie-de-pagina {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    
+    .header {
+        background-color: #0a0717;
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        margin-top: 0;
+        flex-direction: row;
+    }
+    
+    .header .nav-links {
+        padding-left: 2px;
+        color: white;
+        text-decoration: underline;
+        display: flex;
+        flex-direction: column;
+        list-style: none; 
+    }
+      
+    .header .nav-links li {
+        display: inline-block;
+        padding: 0 20px;
+        padding-bottom: 2px;
+    }
+      
+    .header .nav-links li:hover {
+        transform: scale(1.1);
+    }
+      
+    .header .nav-links a {
+        font-size: 700;
+        color: #eceff1;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+    }
+      
+    .header .nav-links li a:hover {
+        color: pink;
+    }
+      
+    .header .btn button{
+        font-weight: 700;
+        color: black;
+        padding: 9px 25px;
+        background: #eceff1;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+      
+    .header .btn button:hover {
+        background-color: #eceff1;
+        color: pink;
+        transform: scale(1.1);
+    }
+
+    .dividendo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info{
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imginfo{
+        padding: 1px;
+        padding-right: 0;
+        max-width: 290px;
+        max-height: 290px;
+    }
+
+    .pie-de-pagina {
+        height: 290px;
+    }
+
+}
