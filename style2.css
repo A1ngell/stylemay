@@ -93,6 +93,12 @@ body{
     text-align: justify;
 }
 
+
+.precio {
+    font-size: 24px !important;
+}
+
+
 .imginfo{
     padding: 10px;
     padding-right: 100px ;
